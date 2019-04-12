@@ -50,10 +50,10 @@ task main()
     	motor[clawMotor] = 127;
     }
     if (vexRT[Btn5D] == 1) {//Claw Closes
-			motor[clawMotor] = -127;
+	motor[clawMotor] = -127;
     }
     else {//Claw stays where it is
-			motor[clawMotor] = 0;
+	motor[clawMotor] = 0;
     }
   }
 }
