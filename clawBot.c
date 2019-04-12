@@ -35,16 +35,13 @@ task main()
     motor[rightMotor] = vexRT[Ch2] / 1;
 
     //Arm Control
-    if(vexRT[Btn6U] == 1)
-    {
+    if(vexRT[Btn6U] == 1) {
       motor[armMotor] = 100;
     }
-    else if(vexRT[Btn6D] == 1)
-    {
+    else if(vexRT[Btn6D] == 1) {
       motor[armMotor] = -40;
     }
-    else
-    {
+    else {
       motor[armMotor] = 0;
     }
 	  
