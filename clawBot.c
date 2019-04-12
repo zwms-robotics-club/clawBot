@@ -46,12 +46,17 @@ task main()
     {
       motor[armMotor] = 0;
     }
-    if (vexRT[Btn5U] == 1) //Claw opens
-			motor[clawMotor] = 127;
-		if (vexRT[Btn5D] == 1) //Claw Closes
-			motor[clawMotor] = -127;
-		else //Claw stays where it is
-			motor[clawMotor] = 0;
+	  
+    //Claw Control	  
+    if (vexRT[Btn5U] == 1) {//Claw opens
+    	motor[clawMotor] = 127;
+    }
+    if (vexRT[Btn5D] == 1) {//Claw Closes
+	motor[clawMotor] = -127;
+    }	    
+    else {//Claw stays where it is
+	motor[clawMotor] = 0;
+    }	    
   }
 }
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
